@@ -4,6 +4,16 @@
 const y = document.getElementById('y');
 if (y) y.textContent = new Date().getFullYear();
 
+// Back-to-top FAB
+(function(){
+  const btn = document.getElementById('btn-top');
+  if (!btn) return;
+  const toggle = () => btn.classList.toggle('is-visible', window.scrollY > 600);
+  window.addEventListener('scroll', toggle, { passive:true });
+  btn.addEventListener('click', () => window.scrollTo({ top:0, behavior:'smooth' }));
+  toggle();
+})();
+
 // Pool slideshow (fotos de afuera)
 (function(){
   const slides = document.querySelectorAll('.pool__slide');

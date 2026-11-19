@@ -94,6 +94,32 @@ button{font:inherit;cursor:pointer}
   .nav__logo{height:60px}
 }
 
+.nav__right{display:flex;align-items:center;gap:14px}
+.nav__icon{
+  width:38px;height:38px;border-radius:50%;
+  display:inline-flex;align-items:center;justify-content:center;
+  color:var(--ink);transition:background .2s,color .2s;
+}
+.nav__icon:hover{background:var(--bg-soft);color:var(--gold)}
+.nav__icon--wa:hover{color:#25D366}
+@media (max-width:620px){.nav__icon{width:34px;height:34px}}
+
+/* ============ Floating action buttons ============ */
+.fab{
+  position:fixed;right:22px;z-index:60;
+  width:56px;height:56px;border-radius:50%;
+  display:inline-flex;align-items:center;justify-content:center;
+  color:#fff;border:0;cursor:pointer;
+  box-shadow:0 8px 24px rgba(0,0,0,.25);
+  transition:transform .2s,background .2s,opacity .25s,visibility .25s;
+}
+.fab--wa{bottom:22px;background:#25D366}
+.fab--wa:hover{background:#128C7E;transform:translateY(-2px)}
+.fab--top{bottom:88px;background:var(--ink);opacity:0;visibility:hidden}
+.fab--top.is-visible{opacity:1;visibility:visible}
+.fab--top:hover{background:var(--gold);transform:translateY(-2px)}
+@media (max-width:620px){.fab{width:52px;height:52px;right:18px}.fab--wa{bottom:18px}.fab--top{bottom:80px}}
+
 /* ============ Hero ============ */
 .hero{
   position:relative;
