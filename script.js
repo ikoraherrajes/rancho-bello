@@ -4,6 +4,18 @@
 const y = document.getElementById('y');
 if (y) y.textContent = new Date().getFullYear();
 
+// Pool slideshow (fotos de afuera)
+(function(){
+  const slides = document.querySelectorAll('.pool__slide');
+  if (!slides.length) return;
+  let i = 0;
+  setInterval(() => {
+    slides[i].classList.remove('is-active');
+    i = (i + 1) % slides.length;
+    slides[i].classList.add('is-active');
+  }, 4800);
+})();
+
 // Smooth scroll
 document.querySelectorAll('.nav__links a, a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
