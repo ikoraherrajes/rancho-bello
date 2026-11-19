@@ -134,15 +134,18 @@ button{font:inherit;cursor:pointer}
   overflow:hidden;color:#fff;
   background:#000;
 }
-.hero__bg{
-  position:absolute;inset:0;z-index:0;
+.hero__slides{position:absolute;inset:0;z-index:0;overflow:hidden}
+.hero__slide{
+  position:absolute;inset:0;
   background-size:cover;background-position:center 55%;
-  animation:heroZoom 18s ease-in-out infinite alternate;
-  will-change:transform;
+  opacity:0;transition:opacity 2s ease;
+  will-change:transform,opacity;transform:scale(1.02);
 }
+.hero__slide.is-active{opacity:1;animation:heroZoom 22s ease-in-out forwards}
 @keyframes heroZoom{
-  from{transform:scale(1)}
-  to{transform:scale(1.15)}
+  0%{transform:scale(1.02)}
+  50%{transform:scale(1.12)}
+  100%{transform:scale(1.02)}
 }
 .hero__scrim{
   position:absolute;inset:0;z-index:1;

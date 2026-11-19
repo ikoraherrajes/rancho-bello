@@ -25,6 +25,7 @@ function runSlideshow(selector, interval){
     slides[i].classList.add('is-active');
   }, interval);
 }
+runSlideshow('.hero__slide', 20000);
 runSlideshow('.afuera__slide', 4800);
 runSlideshow('.pool__slide', 4800);
 
