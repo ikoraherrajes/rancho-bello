@@ -14,17 +14,20 @@ if (y) y.textContent = new Date().getFullYear();
   toggle();
 })();
 
-// Pool slideshow (fotos de afuera)
-(function(){
-  const slides = document.querySelectorAll('.pool__slide');
+// Slideshows (hero + afuera + pool)
+function runSlideshow(selector, interval){
+  const slides = document.querySelectorAll(selector);
   if (!slides.length) return;
   let i = 0;
   setInterval(() => {
     slides[i].classList.remove('is-active');
     i = (i + 1) % slides.length;
     slides[i].classList.add('is-active');
-  }, 4800);
-})();
+  }, interval);
+}
+runSlideshow('.hero__slide', 5500);
+runSlideshow('.afuera__slide', 4800);
+runSlideshow('.pool__slide', 4800);
 
 // Smooth scroll
 document.querySelectorAll('.nav__links a, a[href^="#"]').forEach(a => {
