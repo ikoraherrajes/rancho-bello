@@ -85,7 +85,7 @@ button{font:inherit;cursor:pointer}
 .nav__brand{display:flex;align-items:center}
 .nav__logo{height:76px;width:auto;display:block;mix-blend-mode:multiply}
 .nav__links{display:flex;gap:30px}
-.nav__links a{font-size:13px;font-weight:500;color:var(--ink);transition:color .2s}
+.nav__links a{font-size:12px;font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:.14em;transition:color .2s}
 .nav__links a:hover{color:var(--gold)}
 .nav__cta{padding:11px 22px;font-size:11.5px}
 @media (max-width:900px){
@@ -361,7 +361,7 @@ button{font:inherit;cursor:pointer}
   display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;
   max-width:1344px;margin:0 auto 40px;
 }
-.footer__logo{height:90px;width:auto;margin:0 0 16px;display:block;background:#fff;padding:10px 14px}
+.footer__logo{height:100px;width:auto;margin:0 0 16px;display:block}
 .footer__note{margin:0;font-size:13.5px;line-height:1.55;max-width:340px;color:rgba(255,255,255,.65)}
 .footer__label{
   font-family:"Inter";font-size:11px;letter-spacing:.3em;text-transform:uppercase;
