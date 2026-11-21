@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://ranchobello.com.ar/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ranchobello.com.ar/assets/img/hero-casa.jpg</image:loc>
+      <image:title>Rancho Bello · Fachada</image:title>
+      <image:caption>Casa de campo Rancho Bello en Arroyo de los Patos, Mina Clavero.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ranchobello.com.ar/assets/img/out-02.jpg</image:loc>
+      <image:title>Pileta Rancho Bello</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://ranchobello.com.ar/assets/img/out-03.jpg</image:loc>
+      <image:title>Quincho con parrilla</image:title>
+    </image:image>
+  </url>
+</urlset>
